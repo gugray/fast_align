@@ -190,6 +190,8 @@ void UpdateFromPairs(const vector<string>& lines, const int lc, const int iter,
             oss << j << '-' << (max_index - 1);
           else
             oss << (max_index - 1) << '-' << j;
+          oss << '!';
+          oss << max_p;
         }
       } else {
         if (use_null) {
